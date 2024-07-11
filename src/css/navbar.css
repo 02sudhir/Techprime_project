@@ -1,0 +1,174 @@
+/* Base styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 55px; /* Adjust width as needed */
+  background-color: #f8f9fa; /* Background color */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px; /* Adjust padding as needed */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Space out elements */
+  height: 100%;
+  width: 100%;
+}
+
+.main-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.main-tabs img {
+  margin-bottom: 20px; /* Adjust space between icons as needed */
+  cursor: pointer;
+}
+
+.main-tabs img:hover {
+  opacity: 0.8; /* Add hover effect if needed */
+}
+
+.logout-container {
+  padding-bottom: 20px; /* Adjust bottom padding if needed */
+}
+
+.logout {
+  object-position: bottom;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: 55px; /* Adjust height for smaller screens */
+    flex-direction: row; /* Change direction for smaller screens */
+    justify-content: space-between; /* Adjust as needed */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .flex-container {
+    flex-direction: row; /* Change direction for smaller screens */
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .main-tabs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa; /* Match navbar background */
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .main-tabs img {
+    margin-bottom: 0; /* Reset margin for smaller screens */
+    margin-right: 10px; /* Add space between icons */
+  }
+  
+  .logout-container {
+    position: absolute;/* Base styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 55px; /* Adjust width as needed */
+      background-color: #f8f9fa; /* Background color */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px; /* Adjust padding as needed */
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; /* Space out elements */
+      height: 100%;
+      width: 100%;
+    }
+    
+    .main-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+    
+    .main-tabs img {
+      margin-bottom: 20px; /* Adjust space between icons as needed */
+      cursor: pointer;
+    }
+    
+    .main-tabs img:hover {
+      opacity: 0.8; /* Add hover effect if needed */
+    }
+    
+    .logout-container {
+      position: absolute;
+      top: 10px; /* Adjust top position as needed */
+      right: 10px; /* Adjust right position as needed */
+    }
+    
+    .logout {
+      object-position: bottom;
+    }
+    
+    /* Responsive styles */
+    @media only screen and (max-width: 768px) {
+      .navbar {
+        width: 100%;
+        height: 55px; /* Adjust height for smaller screens */
+        flex-direction: row; /* Change direction for smaller screens */
+        justify-content: space-around; /* Adjust as needed */
+        padding: 10px; /* Adjust padding for smaller screens */
+      }
+      
+      .flex-container {
+        flex-direction: row; /* Change direction for smaller screens */
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .main-tabs {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #f8f9fa;
+        padding: 10px;
+      }
+      
+      .main-tabs img {
+        margin-bottom: 0; /* Reset margin for smaller screens */
+        margin-right: 10px; /* Add space between icons */
+      }
+      
+      .logout-container {
+        display: none; /* Hide logout button in mobile view */
+      }
+    }
+    
+    top: 10px;
+    right: 10px;
+    padding-bottom: 0; /* Reset padding for smaller screens */
+  }
+}

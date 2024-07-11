@@ -1,0 +1,54 @@
+body.login-background {
+    background-image: url('../assets/login-bg-1.png');
+    background-size:contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .login img {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin-left: 4rem;
+  }
+  
+  .login h2 {
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-weight:600;
+    color: white;
+  }
+  
+  /* .backgroundimg {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 70%;
+  } */
+  
+  @media (max-width: 768px) {
+    .login img {
+      margin-left: 1rem; /* Adjust margin for smaller screens */
+    }
+    
+    .login h2 {
+      margin-left: 1rem; /* Adjust margin for smaller screens */
+    }
+  }

@@ -1,0 +1,145 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-left: -250px;
+}
+
+.counters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.counter-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  height: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 20px; /* Add margin between counter boxes */
+}
+
+.counter-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #00CED1;
+}
+
+.dashboard-container h3 {
+  text-align: start;
+  font-size: 23px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: -700px;
+}
+
+.dashboard-container img {
+  align-items: center;
+  margin-left: 500px;
+}
+
+.counter-title {
+  font-size: 10px;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.counter-value {
+  font-size: 24px;
+  color: #333;
+}
+
+.chart {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0; /* Adjust margin for spacing */
+  margin-left: -500px;
+}
+@media (max-width: 768px) {
+  .dashboard-container {
+    margin-left: 0;
+    order: -10; 
+    display: block;
+  }
+
+  .dashboard-container h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .dashboard-container img {
+    display: none; /* Hide image on smaller screens */
+  }
+
+  .counters-container {
+    flex-direction: row;
+    align-items: center;
+    order: 0; /* Reset the order for counters-container */
+  }
+
+  .counter-box {
+    width: calc(50% - 20px); /* Two columns with gap between */
+    max-width: 250px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 20px; /* Add margin between counter boxes */
+  }
+
+  .counter-title {
+    font-size: 8px;
+  }
+
+  .counter-value {
+    font-size: 20px;
+  }
+
+  .chart {
+    align-items: start;
+    max-width: 223px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    order: -1; /* Place the dashboard-container first in the order */
+  }
+
+  .counters-container {
+    flex-wrap: wrap; /* Allow counters to wrap to the next line */
+    order: 0; /* Reset the order for counters-container */
+  }
+
+  .counter-box {
+    width: calc(100% - 20px); /* Full width with gap */
+    max-width: 29%; /* Adjust width for three columns */
+    height: 80px;
+    padding: 10px;
+  }
+
+  .counter-title {
+    font-size: 7px;
+  }
+
+  .counter-value {
+    font-size: 18px;
+  }
+
+  .chart {
+    align-items: center;
+    margin-left: 0px;
+    max-width: 220px;
+  }
+}
